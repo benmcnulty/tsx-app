@@ -1,3 +1,24 @@
+# tsx-app
+
+A historical React/TypeScript/Redux learning app using Create React App tooling.
+The actual [`src/index.tsx`](src/index.tsx) renders the connected
+[`Hello`](src/containers/Hello.tsx) component, which adjusts an enthusiasm level
+through Redux actions/reducers. The default `App.tsx` landing page is retained
+but is not the mounted application entrypoint.
+
+The manifest/lockfile provide `npm ci`, `npm start`, `npm run build` and
+`npm test -- --watchAll=false`. Committed tests cover the Hello component and
+default App. React 16, Redux 4, TypeScript 3 and React Scripts 3 reflect the old
+tooling; current install/build/test compatibility has not been revalidated here.
+No provider keys, runtime environment variables or CI workflow are configured.
+
+The original Create React App guide follows for reference and provenance. This
+is an educational state-management exercise, not a shipped product. No standalone
+license is committed; preserve upstream attribution and provide actual checks
+for any proposed behavior change.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
